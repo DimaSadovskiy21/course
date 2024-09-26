@@ -1,0 +1,22 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - var(--navbar-height));
+    width: var(--sidebar-width);
+    padding: 20px;
+    background-color: var(--inverted-bg-color);
+    transition: width 0.3s;
+}
+
+.collapsed {
+    width: var(--sidebar-width-collapsed);
+}
+
+.swithersBlock {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px, ;
+}
