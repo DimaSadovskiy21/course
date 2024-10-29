@@ -2,6 +2,7 @@
   "main": "Main",
   "about": "About",
   "language": "English",
+  "short-language": "En",
   "toggle": "toggle",
   "page not found": "Page not found...",
   "something went wrong": "Something went wrong...",

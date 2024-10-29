@@ -2,6 +2,7 @@
   "main": "Главная",
   "about": "О сайте",
   "language": "Русский",
+  "short-language": "Ru",
   "toggle": "тумблер",
   "page not found": "Страница не найдена...",
   "something went wrong": "Что-то пошло не так...",

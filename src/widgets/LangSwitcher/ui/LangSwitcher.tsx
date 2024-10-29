@@ -12,10 +12,11 @@ export enum LangSwitcherTheme {
 type Props = {
   className?: string;
   theme?: LangSwitcherTheme;
+  short?: boolean
 };
 
 const LangSwitcher: FC<Props> = (props) => {
-  const { className, theme = LangSwitcherTheme.PRIMARY } = props;
+  const { className, theme = LangSwitcherTheme.PRIMARY, short } = props;
   const { t, i18n } = useTranslation();
 
   const handleChangeLanguage = async () =>
@@ -30,7 +31,7 @@ const LangSwitcher: FC<Props> = (props) => {
       theme={ThemeButton.CLEAR}
       onClick={handleChangeLanguage}
     >
-      {t("language")}
+      {t(short ? "short-language" : "language")}
     </Button>
   );
 };
